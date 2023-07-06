@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function Header() {
+
+            return (
+                <>
+                 <h1>Bhagwad Gita Learnings</h1>
+                </>
+            )
+
+        }
+
+        function App() {
+
+            return (
+                <>
+                <Header />
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lord_Krishna_and_Radha_in_ISKCON%2C_Pune.jpg/1280px-Lord_Krishna_and_Radha_in_ISKCON%2C_Pune.jpg" 
+                style={{width: 500, height: 500}}
+                alt="lord krishna" />
+
+                <ul style={{fontSize: 20}}>
+                    <li>
+                      <p style={{color: "red", fontWeight: "bold"}}>
+                        कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।  <br />
+                        मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।।2.47।।
+                      </p>
+                      <p> 
+                        You have a right to perform  your prescribed duty, but you are not entitled to the 
+                        fruits of action. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty.
+                      </p>
+                    </li>
+                    <li>
+                        <p style={{color: "red", fontWeight: "bold"}}>
+                            योगस्थ: कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय |   <br />
+                            सिद्ध्यसिद्ध्यो: समो भूत्वा समत्वं योग उच्यते || 48||
+                        </p>
+                        <p>
+                          Perform your duty equipoised, O Arjuna, abandoning all attachment to success or failure. Such equanimity is called yoga.
+                        </p>    
+                    </li> 
+                    <li>
+                        <p style={{color: "red", fontWeight: "bold"}}>
+                            बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जित: |   <br />
+                            अनात्मनस्तु शत्रुत्वे वर्ते तात्मैव शत्रुवत् || 6|| 
+                        </p>
+                        <p>
+                          For him who has conquered the mind, the mind is the best of friends; but for one who
+                          has failed to do so, his mind will remain the greatest enemy.
+                        </p>   
+                    </li>    
+                    <li>
+                        <p style={{color: "red", fontWeight: "bold"}}>
+                            मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु |  <br />
+                            मामेवैष्यसि युक्त्वैवमात्मानं मत्परायण: || 34||
+                        </p>
+                        <p>
+                            Always think of Me, become My devotee, worship Me and offer your homage unto Me.
+                            Thus you will come to Me without fail. I promise you this because you are My very
+                            dear friend.
+                        </p>   
+                    </li>  
+                </ul>    
+                
+                <Footer />
+                </>
+            )
+
+        }
+
+        function Footer() {
+            return (
+                <>
+                <p style={{fontSize: 20, color: "red", fontWeight: "bold"}}>
+                    Hare Krishna, Hare Krishna, Krishna Krishna Hare Hare <br />
+                    Hare Rama, Hare Rama, Rama Rama Hare Hare
+                </p>   
+                <p style={{fontSize: 20, color: "red", fontWeight: "bold"}}>
+                    हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे <br />
+                    हरे राम हरे राम राम राम हरे हरे॥
+                </p>     
+                </>
+            )
+        }
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+
+    </script>
+</body>
+</html>
