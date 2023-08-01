@@ -112,9 +112,14 @@ function Student() {
 }
 
 function App(){
+
+    let showCars = false;
+
+    if(showCars){
+        return <CarsPage />
+    }
     return (
         <>
-         <CarsPage />
          <Student />
         </>
     )
