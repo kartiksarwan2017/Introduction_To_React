@@ -19,6 +19,7 @@ function App() {
     return (
         <>
          
+         <h1>Student Details</h1>
          <table border="1">
             <tr>
                 <th>Student Name</th>
