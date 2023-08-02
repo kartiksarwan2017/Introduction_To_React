@@ -1,6 +1,8 @@
 function App() {
 
     let isLoggedIn = true;
+    let firstName = "Alexa";
+    let lastName = "";
 
     return (
         <>
