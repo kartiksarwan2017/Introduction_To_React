@@ -1,11 +1,11 @@
 function App() {
 
-    let isLoggedIn = false;
+    let isLoggedIn = true;
 
     return (
         <>
          {<h1>Hello {(isLoggedIn)? "Alexa!" : "User!"}</h1>}
-         <p>{(isLoggedIn) && "Welcome to the Portal!"}</p>
+         {(isLoggedIn) &&  <p>Welcome to the Portal!</p>}
         </>
     )
 }
